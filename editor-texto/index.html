@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Editor de texto</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css"/>
+        <script language="Javascript">
+         var palabras;
+            
+         function printDiv(nombreDiv) { //Imprimir
+         var contenido= document.getElementById(nombreDiv).innerHTML;
+         var contenidoOriginal= document.body.innerHTML;
+
+         document.body.innerHTML = contenido;
+         window.print();
+         document.body.innerHTML = contenidoOriginal;
+        }
+
+        function contar(obj){//Contador palabras
+            palabras = obj.innerHTML.split(" ");
+            document.getElementById("num").innerHTML = palabras.length;
+        }
+	    </script>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	</head>
+<body>
+<div class="contenedor">
+<div class="barra">
+    <button onclick="document.execCommand('bold',false,'');" ><i class="fas fa-bold"></i></button>
+    <button onclick="document.execCommand('italic',false,'');"><i class="fas fa-italic"></i></button>
+    <button onclick="document.execCommand('underline',false,'');"><i class="fas fa-underline"></i></button>
+    <button onclick="document.execCommand('strikeThrough',false,'');"><i class="fas fa-strikethrough"></i></button>
+    <select onchange="document.execCommand('fontSize',false,value);" id="tamanyo"><option>Tamaño</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select>
+    <select onchange="document.execCommand('foreColor',false,value);" id="color"><option>Color</option><option value="black" id="negro"></option><option value="red" id="rojo"></option><option value="green" id="verde"></option><option value="blue" id="azul"></option></select>
+    <select onchange="document.execCommand('fontName',false,value);" id="fuente"><option value="Arial">Arial</option><option value="Courier New">Courier New</option><option value="Times New Roman">Times New Roman</option></select>
+    <button onclick="document.execCommand('justifyLeft',false,'');" ><i class="fas fa-align-left"></i></button>
+    <button onclick="document.execCommand('justifyCenter',false,'');"><i class="fas fa-align-center"></i></button>
+    <button onclick="document.execCommand('justifyRight',false,'');"><i class="fas fa-align-right"></i></button>
+    <button onclick="document.execCommand('justifyFull',false,'');"><i class="fas fa-align-justify"></i></button>
+    <input type="button" onclick="printDiv('editor')" value="Imprimir" />
+</div>
+<div class="texto">
+    <div id="editor" contenteditable="true" onkeyup="contar(this);"></div> 
+    <div class="palabras"><p>Nº palabras: </p><p id="num"></p></div>
+</div>
+   
+</div>
+</body>
+</html>

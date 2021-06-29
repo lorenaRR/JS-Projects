@@ -1,0 +1,45 @@
+table button{
+	width: 2em;
+	height: 2em;
+}
+
+table{
+	margin: auto;
+}
+
+.contenedor{
+	text-align: center;
+}
+
+
+.cuadros #usa {
+    border-color: black;
+    border: solid;
+    margin: auto;
+    width: 10em;
+    height: 5em;
+    text-align: left;
+}
+
+.cuadros #err {
+    border-color: black;
+    border: solid;
+    width: 2em;
+    height: 2em;
+    margin: auto;
+}
+
+.cuadros td{
+        padding: 0 1.5em 0.5em 0;
+}
+
+h3{
+    text-align: left;
+}
+
+#nuevo{
+    background-color: darkgreen;
+    color:white;
+    border:none;
+    height: 2.5em;
+}

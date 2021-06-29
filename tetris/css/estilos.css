@@ -1,0 +1,51 @@
+body{
+	background: #3c6969;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fff, #3c6969);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fff, #3c6969); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:#898981;
+	font-family: 'Stint Ultra Condensed', cursive;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.title{
+	font-weight: bold;
+	text-align: center;
+	font-size: 2em;
+	margin:auto;
+	padding-left: 5em;
+	letter-spacing: 5px;
+}
+
+.body{
+	display: flex;
+}
+
+.positions{
+	flex: 1 1 auto;
+}
+
+.right{
+ text-align: right;
+ margin-right: 50px;
+}
+
+canvas#tetris{
+ /*border: solid .2em #000;*/
+ border:none;
+ box-shadow: 1px 1px 5px #555 inset;
+ border-radius: 5px;
+ height: 90vh;
+}
+
+.lateral{
+	border:none;
+	box-shadow: 1px 1px 5px #555 inset;
+	margin-bottom: 20px;
+	max-width: 200px;
+    background-color: #fff;
+}
+
+canvas#nextPiece{
+	width: 100%;
+}

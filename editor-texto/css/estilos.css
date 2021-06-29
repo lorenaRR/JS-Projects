@@ -1,0 +1,51 @@
+.contenedor{
+    margin: auto;
+}
+
+#editor{
+    border: solid;
+    width: 50em;
+    height: 25em;
+}
+
+#color{
+    width: 5em;
+}
+
+#tamanyo{
+     width: 7em;
+}
+#fuente{
+    width: 11em;
+}
+
+#negro{
+    background-color: black;
+}
+#rojo{
+    background-color: red;
+}
+#verde{
+    background-color: green;
+}
+
+#azul{
+    background-color: blue;
+}
+
+select{
+    outline: none;
+}
+
+.barra, .texto{
+    padding: 1em;
+}
+
+.palabras{
+    border: solid 1px;
+    display: flex;
+    height: 3em;
+    width: 50em;
+}
+
+

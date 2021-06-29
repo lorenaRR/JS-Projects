@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/palabras.js"></script>
+	<title>El Ahorcado</title>
+</head>
+
+<body>
+	<div class="contenedor">
+		<h1>EL AHORCADO</h1>
+		<div class="dibujo">
+		<img id="imagen" src="img/0.jpg"/>
+		</div>
+		<div class="letras">
+		<table>
+			<tr> <td><button id="a" onclick="ComparaLetra(this.id)" disabled>A</button></td> 
+				 <td><button id="b" onclick="ComparaLetra(this.id)" disabled>B</button></td> 
+				 <td><button id="c" onclick="ComparaLetra(this.id)" disabled>C</button></td> 
+				 <td><button id="d" onclick="ComparaLetra(this.id)" disabled>D</button></td> 
+				 <td><button id="e" onclick="ComparaLetra(this.id)" disabled>E</button></td> 
+				 <td><button id="f" onclick="ComparaLetra(this.id)" disabled>F</button></td>
+			</tr>
+			<tr> <td><button id="g" onclick="ComparaLetra(this.id)" disabled>G</button></td> 
+				 <td><button id="h" onclick="ComparaLetra(this.id)" disabled>H</button></td> 
+				 <td><button id="i" onclick="ComparaLetra(this.id)" disabled>I</button></td> 
+				 <td><button id="j" onclick="ComparaLetra(this.id)" disabled>J</button></td> 
+				 <td><button id="k" onclick="ComparaLetra(this.id)" disabled>K</button></td> 
+				 <td><button id="l" onclick="ComparaLetra(this.id)" disabled>L</button></td>
+			</tr>
+			<tr><td><button id="m" onclick="ComparaLetra(this.id)" disabled>M</button></td> 
+				 <td><button id="n" onclick="ComparaLetra(this.id)" disabled>N</button></td> 
+				 <td><button id="ñ" onclick="ComparaLetra(this.id)" disabled>Ñ</button></td> 
+				 <td><button id="o" onclick="ComparaLetra(this.id)" disabled>O</button></td> 
+				 <td><button id="p" onclick="ComparaLetra(this.id)" disabled>P</button></td> 
+				 <td><button id="q" onclick="ComparaLetra(this.id)" disabled>Q</button></td>
+			</tr>
+			<tr><td><button id="r" onclick="ComparaLetra(this.id)" disabled>R</button></td> 
+				 <td><button id="s" onclick="ComparaLetra(this.id)" disabled>S</button></td> 
+				 <td><button id="t" onclick="ComparaLetra(this.id)" disabled>T</button></td> 
+				 <td><button id="u" onclick="ComparaLetra(this.id)" disabled>U</button></td> 
+				 <td><button id="v" onclick="ComparaLetra(this.id)" disabled>V</button></td> 
+				 <td><button id="w" onclick="ComparaLetra(this.id)" disabled>W</button></td>
+			</tr>
+			<tr><td><button id="x" onclick="ComparaLetra(this.id)" disabled>X</button></td> 
+				 <td><button id="y" onclick="ComparaLetra(this.id)" disabled>Y</button></td> 
+				 <td><button id="z" onclick="ComparaLetra(this.id)" disabled>Z</button></td>		
+			</tr>
+			<tr></tr>
+		</table>
+		</div>
+        <div class="palabra">
+        <p id="pal"></p>
+        </div>
+		<table class="cuadros">
+            <tr>
+                <td><h3>Letras usadas: </h3></td>
+                <td><h3>Errores:</h3></td>
+            </tr>
+            <tr>
+                <td><p id="usa"></p></td>
+                <td><p id="err"></p></td>
+            </tr>
+		</table>
+		<div class="boton">
+		<button onclick="Empezar()" id="nuevo" >Nuevo Juego</button>
+		</div>
+		
+	</div>
+				
+</body>
+</html>

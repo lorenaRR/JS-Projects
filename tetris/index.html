@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	
+
+	<div class="body">
+		<div class="title">TETRIS</div>
+		<div class="positions right">
+			<canvas id="tetris" width="200" height="400"></canvas>	
+		</div>
+		<div class="positions">
+			<div class="lateral">
+				NEXT
+				<canvas id="nextPiece" width="100" height="100"></canvas>
+			</div>
+			<div class="lateral">
+				SCORE
+				<div id="score"></div>
+			</div>
+			<div class="lateral">
+				LINES
+				<div id="lines"></div>
+			</div>
+			<div class="lateral">
+				LEVEL
+				<div id="level"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/tetris.js"></script>
+</body>
+</html>
